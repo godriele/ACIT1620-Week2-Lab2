@@ -1,0 +1,51 @@
+:root {
+    --base-color: 210, 60%;
+    --base-font-color: 40, 100%
+}
+/* root = all */
+
+table {
+    table-layout: fixed;
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid hsl(var(--base-color), 90%);
+}
+
+th,
+td {
+    padding: 1rem;
+    border: 1px solid hsl(var(--base-color), 90%);
+
+}
+
+th {
+    text-align: left;
+    text-transform: uppercase;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 900;
+}
+
+td {
+    text-align: center;
+    text-transform: capitalize;
+}
+
+tr:nth-child(odd) {
+    background: hsl(var(--base-color), 40%);
+}
+
+tr:nth-child(even) {
+    background: hsl(var(--base-color), 50%);
+}
+
+
+tr:nth-child(1) {
+    background: hsl(var(--base-color), 25%);
+    color: hsl(40, 100%, 50%);
+    /* this changes the color of the first row (heading) */
+}
+
+tr:nth-child(n + 2) {
+    color: hsl(var(--base-font-color), 70%);
+}
+

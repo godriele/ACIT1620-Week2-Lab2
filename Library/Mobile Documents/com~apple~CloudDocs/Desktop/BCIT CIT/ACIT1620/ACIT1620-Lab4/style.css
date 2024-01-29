@@ -1,0 +1,12 @@
+header {
+    background-color: hsl(210, 90%, 30%);
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 0;
+    font-weight: 100%;
+}
+ body{
+    margin: 0;
+ }

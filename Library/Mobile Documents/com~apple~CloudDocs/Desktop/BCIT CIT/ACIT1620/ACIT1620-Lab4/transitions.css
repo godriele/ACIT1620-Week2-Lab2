@@ -1,0 +1,59 @@
+.wrapper {
+    background: #eaeaea;
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+
+    padding: 80px 1rem 1rem;
+}
+
+.wrapper > div {
+    width: 15rem;
+    height: 12rem;
+    position: relative;
+    transition: left 2s, box-shadow ease;
+}
+
+.wrapper > div:nth-child(1) {
+    background: mediumseagreen;
+   /* transition-delay: 0.5s; */
+}
+
+.wrapper > div:nth-child(2) {
+    background: orchid;
+    left: cal(cal(15rem + 40px) * -1);
+    transition-delay: 0.2s;
+}
+
+.wrapper > div:nth-child(3) {
+    background-color: mediumvioletred;
+    left: cal(cal(30rem + 80px) * -1);
+    transition-delay: 0.3s;
+}
+
+.wrapper > div:nth-child(4) {
+    background: salmon;
+    left: cal(cal(45rem + 120px) * -1);
+    transition-delay: 0.4s;
+}
+
+.wrapper > div:nth-child(5) {
+    background-color: chartreuse;
+    left: cal(cal(60rem + 160px) * -1);
+    transition-delay: 0.5s;
+
+    box-shadow: 10px -10px 0 salmon,
+    20px  -20px 5px mediumvioletred,
+    30px  -30px 0 orchid,
+    40px  -40px 0 mediumseagreen
+
+}
+
+.wrapper:hover > div {
+    left: 0;
+
+    box-shadow: none;
+    transition: left 2s, box-shadow 1s ease;
+
+
+}
